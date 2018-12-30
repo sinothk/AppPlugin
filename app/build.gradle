@@ -27,5 +27,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
+    //
     implementation 'com.didi.virtualapk:core:0.9.8'
+    implementation 'com.github.sinothk:RxRetrofit:3.6.1226'
 }
