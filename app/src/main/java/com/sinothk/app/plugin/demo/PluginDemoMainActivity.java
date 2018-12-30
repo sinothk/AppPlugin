@@ -20,7 +20,7 @@ public class PluginDemoMainActivity extends AppCompatActivity {
         findViewById(R.id.downLoadApkBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String pluginPath = Environment.getExternalStorageDirectory().getAbsolutePath().concat("/Test.apk");
+                String pluginPath = Environment.getExternalStorageDirectory().getAbsolutePath().concat("/test1.apk");
                 File plugin = new File(pluginPath);
                 try {
                     PluginManager.getInstance(PluginDemoMainActivity.this).loadPlugin(plugin);
@@ -37,7 +37,7 @@ public class PluginDemoMainActivity extends AppCompatActivity {
                 // and there is an activity called `MainActivity`.
                 try {
                     Intent intent = new Intent();
-                    intent.setClassName("com.didi.virtualapk.demo", "com.didi.virtualapk.demo.MainActivity");
+                    intent.setClassName("com.sinothk.plugin.demo1", "com.sinothk.plugin.demo1.MainActivity");
                     startActivity(intent);
                 } catch (Exception e) {
                     e.printStackTrace();
